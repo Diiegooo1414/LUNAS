@@ -1,9 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var vite_1 = require("vite");
-var vite_2 = require("@tailwindcss/vite");
-exports.default = (0, vite_1.defineConfig)({
-    plugins: [
-        (0, vite_2.default)(),
-    ],
-});
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.html", "./src/**/*.{js,ts,jsx,tsx}"], // Busca en HTMLs de la raíz y JS en src
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
