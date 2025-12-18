@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-    plugins: [
-        tailwindcss(),
-    ],
+  // Dejamos esto vacío o con configuración básica de servidor
+  server: {
+    open: true // Abre el navegador automáticamente
+  }
 })
